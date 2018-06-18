@@ -1,0 +1,38 @@
+<!--1.alertmessage.html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+loops while
+    </title>
+  </head>
+  <body>
+    <p id="myparagraph">
+      Javascript.
+    </p>
+    <button onclick="iniat()">start the game</button>
+    <p id="balance">
+currentbalance 1000$
+    </p>
+    <script>
+var i = 0;
+while (i<5) {
+  document.getElementById("myparagraph").innerHTML += "<br />" + i ;
+  i++;
+};
+function iniat() {
+var balance = 1000;
+var itemsbought = 0;
+while (balance>0) {
+var itemprice = Math.floor(Math.random()*100)
+if (itemprice <= balance) {
+  itemsbought += 1;
+  balance -= itemprice ;
+  document.getElementById("balance").innerHTML += "<p> purchase amount : $" + itemprice +"new balance" + balance + "</p>" ;}
+}
+}
+    </script>
+  </body>
+
+</html>

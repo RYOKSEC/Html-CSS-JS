@@ -1,0 +1,37 @@
+<!--1.alertmessage.html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      loops for
+    </title>
+  </head>
+  <body>
+    <p id="paragragh">
+      Javascript.
+    </p>
+    <script>
+for (i = 0; i<5; i++) {
+  document.getElementById("paragragh").innerHTML += "<br />" + i;
+};
+for (i = 7; i>0; i--){
+  document.getElementById("paragragh").innerHTML += "<br />" + Math.pow(i,2)
+};
+
+var shoppinglist = ["bread", "milk", "egg"];
+for (var i = 0; i < shoppinglist.length; i++) {
+  document.getElementById("paragragh").innerHTML += "<br />" + shoppinglist[i];
+}
+/*if we put "" it will become as text but if we didn't
+put it it will proceding as numper (for math)*/
+var numperlist = [1 ,2 ,3];
+for (var i = 0; i < numperlist.length; i++) {
+  numperlist[i] += 10;
+  document.getElementById("paragragh").innerHTML += "<br />" + numperlist[i];
+};
+
+    </script>
+  </body>
+
+</html>

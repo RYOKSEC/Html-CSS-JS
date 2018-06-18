@@ -1,0 +1,48 @@
+<!--1.alertmessage.html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      regular expressions
+    </title>
+    <!-- //we use g method in the pattern to search in the entire input specificly -->
+    <!-- //the first match pattern will give you its position numper starting from 0 -->
+    <!-- //and we use i too look about smth in the entire input small or capital litter and returns the first litter match -->
+    <!-- //we have search and match -->
+    <!-- //search will give you the numper of the matching litter starting from 0 -->
+  <!-- match will return it as a litter -->
+  </head>
+  <body>
+<p>string: <span id="string"></span></p>
+<p>pattern <span id="pattern"></span></p>
+<p>Resault(search): <span id="search"></span></p>
+<p>Resault(match) <span id="match"></span></p>
+<p>Resault(test) <span id="test"></span></p>
+
+
+
+
+
+    <script>
+var str = "Atlanta4869";
+//var pattern = /[a-z]/g; from a to z and if we want to check that it isn't in the text we put the ^ marker in the pattern
+// var pattern = /[^atn]/g;
+// var pattern = /[4-7]/g;
+// var pattern = /\d/g; to check if there is any digit in the string
+// var pattern = /\W/g to check non alphapit characters//
+//var pattern = /\s/g; for the space
+//var pattern = /\d{10}/g; to check how much numpers in ther
+//var pattern = /^b/g; like the i method
+// var pattern = /\n/g; for check if there is line break
+var pattern = /\n/g;
+//var pattern = new RegExp("a","g");
+document.getElementById("string").innerHTML = str ;
+document.getElementById("pattern").innerHTML = pattern ;
+document.getElementById("search").innerHTML = str.search(pattern) ;
+document.getElementById("match").innerHTML = str.match(pattern) ;
+document.getElementById("test").innerHTML = pattern.test(str) ;
+    </script>
+  </body>
+
+</html>

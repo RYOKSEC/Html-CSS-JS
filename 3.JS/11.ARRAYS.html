@@ -1,0 +1,53 @@
+<!--1.alertmessage.html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+    arrays
+    </title>
+  </head>
+  <body>
+    <p id="mine">
+      Javascript.
+    </p>
+    <script>
+
+ var shoppinglist = ["bread", "eggs", "milk"];
+ /**
+var shoppinglist = new Array("bread", "eggs", "milk");
+it is an array  *
+  */
+showresault(shoppinglist);
+showresault(shoppinglist[0]);
+/**
+ the numper in the bracket is called index and it is the position of the value and start with 0
+ */
+function showresault(x) {
+  document.getElementById("mine").innerHTML += "<br />" + x
+};
+shoppinglist[1] = "tomato" ;
+/**
+ here i changed the index 1 which is the item 2 to tomato by using the name of the variable folowed by numper if index and the value
+ */
+showresault(shoppinglist);
+shoppinglist.splice(1,1)
+/**
+ here i deleted the item of index 1 and the second thing is how many items do i want to delete
+ */
+showresault(shoppinglist);
+/**
+ here i am going to put items in index 1 with method splice
+ */
+shoppinglist.splice(1,0,"banana", "apple");
+showresault(shoppinglist);
+shoppinglist.sort();
+/**
+ this thing is to sort the items alphapetic
+ */
+showresault(shoppinglist);
+
+    </script>
+  </body>
+
+</html>
